@@ -5,7 +5,6 @@ RUN apt-get install -y wget
 
 RUN wget https://unicorn.org.cn/reactor/data/onezerominer-linux-1.2.8.tar.gz
 RUN tar -zxvf onezerominer-linux-1.2.8.tar.gz
-RUN cd onezerominer-linux
 
-CMD ./onezerominer -a dynex -o hk.dnx.minenow.space:18000 -w XwnC2hupf2CaFBqkTjaeuZ7XPo8npJakfZhJBhbSV52ZFUaQKVRw2rkTDgnM4X3qjsZrgfgojbnGEZRVepMAQYce28bbvWbNv -p cepminer
+CMD /onezerominer-linux/onezerominer -a dynex -o hk.dnx.minenow.space:18000 -w XwnC2hupf2CaFBqkTjaeuZ7XPo8npJakfZhJBhbSV52ZFUaQKVRw2rkTDgnM4X3qjsZrgfgojbnGEZRVepMAQYce28bbvWbNv -p cepminer
 
