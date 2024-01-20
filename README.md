@@ -1,4 +1,6 @@
-#Docker Miners
+# Docker Miners
+
+Miners with one click to run.
 
 ```bash
 docker run -d --restart=always --gpus '"device=all"' --name dynex uiewy/dynex:1.2.8
