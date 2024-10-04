@@ -1,1 +1,2 @@
 Aleo/aleopool.io/aleo_prover filter=lfs diff=lfs merge=lfs -text
+Aleo/aleo.asia1.zk.work/aleo_prover filter=lfs diff=lfs merge=lfs -text
