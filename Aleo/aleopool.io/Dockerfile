@@ -10,5 +10,5 @@ RUN apt-get install -y sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 COPY aleo_prover .
-CMD ["sh", "-c", "echo ${ACCOUNT_ID} && echo cephalon_${GPU_TYPE}_$(hostname) && ./aleo_prover --tcp_server 47.243.163.37:20003 --network Mainnet --miner_account ${ACCOUNT_ID} --worker cephalon_${GPU_TYPE}_$(hostname)"]
+CMD ["sh", "-c", "echo ${ACCOUNT_ID} && echo cephalon_${GPU_TYPE}_$(hostname) && ./aleo_prover --tcp_server mainnet.aleopool.io:20003 --miner_account ${ACCOUNT_ID} --worker cephalon_${GPU_TYPE}_$(hostname)"]
 
